@@ -9,7 +9,7 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}\\sampleApp.exe", // <--- change to executable file assigned in build task file 
-            "args": [],
+            "args": ["2", "3"],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}", // <--- change from file name to workspace folder 
             "environment": [],
