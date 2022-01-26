@@ -13,7 +13,12 @@ int main()
             printf("%.2f\n",val2+val1);
             break;
         case '/':
-            printf("%.2f\n",val1/val2);
+            if (val2 == 0)
+            {
+                printf("divide by zero error\n");
+            }
+            else 
+                printf("%.2f\n",val1/val2);
             break;
         case '*':
             break;
