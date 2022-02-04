@@ -8,7 +8,8 @@ Purpose: challenge to print the byte size of common C data types
 int main() 
 {
     char s[] = "this is a string";
-    char *s1 = "this is a string, it doesn't matter how long this is, it is a pointer so s will always be 8 bytes";
+    char *s1 = "this is a string, it doesn't matter how long this is, it is a pointer so s will always be 8 bytes";// string literal stored in read only memory
+    // altering ^^^ this string is illegal and will blow up your program 
     int* i;
     *i = 8;
     size_t s_size = sizeof(s);
