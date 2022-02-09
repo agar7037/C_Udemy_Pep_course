@@ -1,0 +1,4 @@
+привет
+Hello
+Привет, меня зовут Александр.
+Hello, My name is Alexander.
