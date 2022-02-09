@@ -2,3 +2,10 @@
 Hello
 Привет, меня зовут Александр.
 Hello, My name is Alexander.
+|
+хорошо
+Good, well, positive afirmation
+P1: ты хорошо? P2: да хорошо
+P1: You good? P2: Yes I'm good
+|
+|
