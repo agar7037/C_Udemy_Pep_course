@@ -3,7 +3,8 @@
 #include <string.h>
 
 int main(void)
-{   const char* config = "russia_config.txt";
+{   
+    const char* config = "russia_config.txt";
     FILE *fp = fopen(config,"r");
     int BUFFERSIZE = sizeof(wchar_t)*100; 
     char s[BUFFERSIZE]; 

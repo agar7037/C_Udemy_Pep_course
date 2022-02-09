@@ -14,10 +14,15 @@ Description: Console application for storing known Russian vocabulary including 
 #include <wchar.h>
 #include <string.h>
 
+int NumEntries(const char *config, int buff_size);
+
 int main(void)
 {
     setlocale(LC_ALL,"");// Allow for Russian language input and output
- 
+    int BUFFERSIZE = sizeof(wchar_t)*100;
+    const char *config = "russia_config.txt"; 
+    int entries = NumEntries(config, BUFFERSIZE);
+    printf("Number of entries; %d\n", entries);
     //struct definition
     struct word {
         char* Rus;
@@ -27,8 +32,7 @@ int main(void)
     };
 
     //Open configuration file 
-    FILE *fp = fopen("russia_config.txt","r");
-    int BUFFERSIZE = sizeof(wchar_t)*100; 
+    FILE *fp = fopen("russia_config.txt","r"); 
     char* current_line;
     current_line = malloc(BUFFERSIZE);
     //_Bool delimit = 0; <-- checking for new word delimiter  
@@ -59,9 +63,8 @@ int main(void)
             word1.En_sentence = malloc(strlen(current_line)*sizeof(wchar_t));
             strcpy(word1.En_sentence,current_line);
             break;
-
         default:
-            printf("something has gone wrong");
+            printf("Something has gone wrong, entry has too many members, check config file: %d", i);
             break;
         }
         i++;
@@ -121,16 +124,39 @@ int main(void)
 }
 
 
-/*function definitions 
+
+/*function body definitions 
 1. main menu function 
     inputs: none 
     ouputs: prints numbered menu; prompts user for input, pauses program to wait for response 
     uses switch statement to compare response to menu options 
     calls appropriate function 
-
-
-
+*/
+// Count the number of entries in the config file
+int NumEntries(const char *config, int buff_size)
+{
+//Purpose: opens config file, counts the number entries by counting chosen delimeter character '|'
+// open file, declare local variables
+    FILE *fp = fopen(config,"r");
+    char s[buff_size]; 
+    int entry_count = 0;
+// check that file exists 
+    if (fp == NULL){
+        printf("File does not exist");
+        return 0; 
+    }
+// cycle through file counting delimeter char '|'
+    while (fgets(s,buff_size, fp) != NULL)
+    {
+        if (s[0] == '|')
+        {
+            entry_count++; 
+        }
+    }
+    fclose(fp);
+    return entry_count;
+}
+/*
 2. test function 1 
 3. test function 2 
-
 */
