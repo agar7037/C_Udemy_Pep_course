@@ -4,8 +4,49 @@ Hello
 Hello, My name is Alexander.
 |
 хорошо
-Good, well, positive afirmation
+Good, well, positive affirmation - adverb
 P1: ты хорошо? P2: да хорошо
 P1: You good? P2: Yes I'm good
 |
+хороший, хорошая
+Good - Adjective; masculine feminine
+этот хороший стейк, эта лапша хорошая
+This is a good steak, this is good lapsha
 |
+вкусно
+delicious - adverb
+ммм это вкусно
+mmm this is delicious
+|
+вкусный вкусная
+delicious - Adjective; masculine feminine
+этот стейк вкусный, эта лапша вкусная
+This steak is delicious, this lapsha is delicious: note masculine этот
+|
+вкусные
+delicious - plural
+эти салаты вкусные
+These salads are delicious
+|
+страшно
+afraid
+Мне страшно, Нам долго спускаться
+I'm scared, It's a long way down
+|
+страшный, страшная
+uggly, scary - Adjective; masculine feminine
+это страшный дом,  этот дом страшный
+This house is scary/ugly (depending on context) 
+|
+ужасный, ужасная 
+uggly (bad character, mean, bad person) - Adjective; masculine feminine
+это ужасный дом, 
+This house is uggly, 
+|
+уродливый, уродливая
+uggly (outside characteristics) - Adjective; masculine feminine
+это уродливый дом
+This house is uggly
+|
+
+
