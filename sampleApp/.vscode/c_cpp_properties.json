@@ -11,7 +11,7 @@
                 "_UNICODE"
             ],
             "compilerPath": "C:\\cygwin64\\bin\\gcc.exe",
-            "cStandard": "gnu11",
+            "cStandard": "gnu11", // just changed from 11 to 99 to see if I can us variable length arrays 
             "cppStandard": "c++17",
             "intelliSenseMode": "windows-gcc-x64"
         }
