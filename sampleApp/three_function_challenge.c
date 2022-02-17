@@ -54,6 +54,11 @@ int main(void)
     b = 7; 
     gdc = GDC(a,b);
     printf("GDC of %d, and %d is %d\n", a,b,gdc);    
+    // test from video 
+    a = 35; 
+    b = 150; 
+    gdc = GDC(a,b);
+    printf("GDC of %d, and %d is %d\n", a,b,gdc);   
 // ABSOLUTE VALUE TEST 
 //------------------------------------------------------------------------------------------------
     float A = 8.0f; 
@@ -125,6 +130,7 @@ float absolute(float a)
     return a; 
 
 }
+// uses Newton Raphson method for computing the square root. 
 float square_root(float a)
 {
     float sqR; 

@@ -204,8 +204,16 @@ int main(void)
         printf("\n");
     }
 
+// can we index multidimensional arrays as if single dimensioned ? nope 
+   
+    int A2[9] = {1,2,3,4,5,6,7,8,9}; 
+    int result; 
+    for (int i = 0; i < 9; i++)
+    {
+        result = A2[i] % 3;
+        printf("%d mod 3 = %d\n", A2[i], result);
 
-
+    } 
 
     return 0;
 

@@ -47,6 +47,7 @@ int main(void)
             {
                 printf("Enter a number between 1 and 20: ");
                 success = scanf("%d", &guess);
+                
 
                 while(newline_consume = getchar()!= '\n'){} // new lines left in input buffer from number input
                 
