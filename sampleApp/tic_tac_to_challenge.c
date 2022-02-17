@@ -69,7 +69,7 @@ int main(void)
     int Player = 1; 
     bool winner = false;
     int turn_count = 1; 
-    //goto test; // Label for jump to test section, use for debugging functions, remove after debugging 
+
     while (play)
     {
     //Print board 
@@ -125,12 +125,6 @@ int main(void)
         else 
             Player = 1; 
     }
-/*-----------------------------------------------------------------------------------------
-                                        UNIT TESTING  
-------------------------------------------------------------------------------------------*/
-    // label for testing functions, remove after debugging 
- //   test: 
-
 // final exit message 
     printf("Goodbye ");
     return 0;  
