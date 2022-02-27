@@ -1,0 +1,3 @@
+here is a line of text and it is good 
+here is another line of text and I love it and it's good 
+there are four occurances of and in this file 
